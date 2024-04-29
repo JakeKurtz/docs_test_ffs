@@ -1,0 +1,27 @@
+color: red-cyan
+metal: 0-1
+roughness: 0-1
+spec_tint: white to orange
+
+flake_scale: 250-5000
+flake_density: 0-.6
+flake_var: 0-.3
+flake_absorption: 1-10
+flake_weight: 0-1
+
+cc_color: black to white
+cc_roughness: 0-1
+
+curve_factor: 0-1
+Use subtractive color mix: on-off
+pigment_scatter: 0-1
+pigment_ior: 1.333-2.0
+
+flake_opaque_density: 250-5000
+flake_opaque_density: 0-1
+flake_opaque_var: 0-.3
+flake_opaque_absorption: 0-10
+flake_opaque_weight: 0-1
+
+flake_opaque_ior: 1.0-3.0
+flake_opaque_thickness: 0-800

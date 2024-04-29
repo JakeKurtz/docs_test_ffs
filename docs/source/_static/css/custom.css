@@ -1,0 +1,15 @@
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.video_container {
+    display: flex;
+  }
+
+  .left, .right {
+    display: inline-block;
+  }
