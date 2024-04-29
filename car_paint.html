@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Paint &mdash; RexHue Paints 1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=3c20efca" />
+      <link rel="stylesheet" type="text/css" href="_static/dark_mode_css/general.css?v=c0a7eb24" />
+      <link rel="stylesheet" type="text/css" href="_static/dark_mode_css/dark.css?v=70edf1c7" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=f2a433a1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/dark_mode_js/default_dark.js?v=fd565c74"></script>
+        <script src="_static/dark_mode_js/theme_switcher.js?v=358d3910"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Flex Paint" href="car_paint_flex.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RexHue Paints
+              <img src="_static/rexhue_logo_inv.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Paint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#inputs">Inputs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-coat">Base Coat</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#color">Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metallic">Metallic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#specular-tint">Specular Tint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roughness">Roughness</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#flakes-coat">Flakes Coat</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tint">Tint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scale">Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#density">Density</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#variation">Variation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Roughness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#absorption">Absorption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#weight">Weight</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#clear-coat">Clear Coat</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Roughness</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#outputs">Outputs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shader">Shader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="car_paint_flex.html">Flex Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="car_paint_opaque_flakes.html">Chameleon Paint w. Opaque Flakes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="car_paint_transparent_flakes.html">Chameleon Paint w. Transparent Flakes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help.html">Help</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RexHue Paints</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Basic Paint</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/car_paint.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="basic-paint">
+<h1>Basic Paint<a class="headerlink" href="#basic-paint" title="Link to this heading"></a></h1>
+<p>Utilizes a three-layer system: base coat, metallic flakes, and a clear top coat.</p>
+<img src="_images/basic_paint.png" alt="my alt text" width="50%"/>
+<section id="inputs">
+<h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading"></a></h2>
+<section id="base-coat">
+<h3>Base Coat<a class="headerlink" href="#base-coat" title="Link to this heading"></a></h3>
+<section id="color">
+<h4>Color<a class="headerlink" href="#color" title="Link to this heading"></a></h4>
+<p>Specifies the base color of the paint.</p>
+<figure>
+  <img src="_images/bc_color/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Variation of base colors</figcaption>
+</figure>
+</section>
+<section id="metallic">
+<h4>Metallic<a class="headerlink" href="#metallic" title="Link to this heading"></a></h4>
+<p>Controls the metallic appearance of the base paint coat.</p>
+<figure>
+  <img src="_images/bc_metal/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Metallic from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="specular-tint">
+<h4>Specular Tint<a class="headerlink" href="#specular-tint" title="Link to this heading"></a></h4>
+<p>Adjusts the tint of the specular highlights.</p>
+<figure>
+  <img src="_images/bc_spec_tint/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">From white to orange</figcaption>
+</figure>
+</section>
+<section id="roughness">
+<h4>Roughness<a class="headerlink" href="#roughness" title="Link to this heading"></a></h4>
+<p>Controls the roughness of the base paint coat.</p>
+<figure>
+  <img src="_images/bc_roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+</section>
+<section id="flakes-coat">
+<h3>Flakes Coat<a class="headerlink" href="#flakes-coat" title="Link to this heading"></a></h3>
+<section id="tint">
+<h4>Tint<a class="headerlink" href="#tint" title="Link to this heading"></a></h4>
+<p>Sets the color of the flakes tint in the paint.</p>
+<figure>
+  <img src="_images/flake_tint/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Variation of flake tints, with absorption value of 5.5</figcaption>
+</figure>
+</section>
+<section id="scale">
+<h4>Scale<a class="headerlink" href="#scale" title="Link to this heading"></a></h4>
+<p>Adjusts the size of the flakes.</p>
+<figure>
+  <img src="_images/flake_scale/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Scale from 250.0 to 5000.0</figcaption>
+</figure>
+</section>
+<section id="density">
+<h4>Density<a class="headerlink" href="#density" title="Link to this heading"></a></h4>
+<p>Controls the density of the flakes.</p>
+<figure>
+  <img src="_images/flake_density/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Density from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="variation">
+<h4>Variation<a class="headerlink" href="#variation" title="Link to this heading"></a></h4>
+<p>This parameter determines the extent to which flake orientation deviates from the surface normal. A value of 0.0 means minimal deviation, aligning flakes closely with the surface. Higher values intensify the flake effect, making it more pronounced.</p>
+<figure>
+  <img src="_images/flake_var/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Variation from 0.0 to 0.1</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h4>Roughness<a class="headerlink" href="#id1" title="Link to this heading"></a></h4>
+<p>Specifies the roughness of the flakes.</p>
+<figure>
+  <img src="_images/flake_roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+<section id="absorption">
+<h4>Absorption<a class="headerlink" href="#absorption" title="Link to this heading"></a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For realistic results, try using an absorption with a value higher than 0. It gives a better impression of the flakes being embedded in the paint.</p>
+</div>
+<p>Specifies the degree of light absorbed by the pigment before it is reflected off the flakes.</p>
+<figure>
+  <img src="_images/flake_absorption/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Absorption from 1.0 to 30.0</figcaption>
+</figure>
+</section>
+<section id="weight">
+<h4>Weight<a class="headerlink" href="#weight" title="Link to this heading"></a></h4>
+<p>This multiplier scales the reflection intensity received by the flakes.</p>
+<figure>
+  <img src="_images/flake_weight/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Weight from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+</section>
+<section id="clear-coat">
+<h3>Clear Coat<a class="headerlink" href="#clear-coat" title="Link to this heading"></a></h3>
+<section id="id2">
+<h4>Color<a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
+<p>Specifies the color of the clear coat layer.</p>
+<figure>
+  <img src="_images/cc_color/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Color from black to white</figcaption>
+</figure>
+</section>
+<section id="id3">
+<h4>Roughness<a class="headerlink" href="#id3" title="Link to this heading"></a></h4>
+<p>Controls the roughness of the clear coat layer.</p>
+<figure>
+  <img src="_images/cc_roughness/strip.png" alt="my alt text"/>
+  <figcaption text-align="center">Roughness from 0.0 to 1.0</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="outputs">
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading"></a></h2>
+<section id="shader">
+<h3>Shader<a class="headerlink" href="#shader" title="Link to this heading"></a></h3>
+<p>Standard shader output.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="car_paint_flex.html" class="btn btn-neutral float-right" title="Flex Paint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Jake Kurtz.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
